@@ -1,0 +1,45 @@
+app:
+  jwt:
+    token:
+      access:
+        expiration: 86400000
+        key: 22MYlyBwOd$gXWUjlfZW0aA
+      refresh:
+        expiration: 604800000
+        key: daskdl*))(22MYlyBwOd$gXWUjlfZW0aA
+logging:
+  file:
+    name: app-first-spring.log
+  pattern:
+    file: ': "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"'
+spring:
+  datasource:
+    password: 12
+    url: jdbc:postgresql://localhost:5433/spring_security
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sirojiddinit@gmail.com
+    password: iatltworrfvqpdkf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+
+
+
+
